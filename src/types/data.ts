@@ -1,9 +1,45 @@
-type BoxOfBoard = {
-  hasMine: boolean;
-  minesAround: 0;
-};
+import { BoxOfBoard, GameBoard } from "./types.js";
 
-type GameBoard = {
-  rows: BoxOfBoard[];
-  columms: BoxOfBoard[];
+const boxOfBoard: BoxOfBoard[] = [
+  {
+    hasMine: true,
+    minesAround: 0,
+  },
+  {
+    hasMine: false,
+    minesAround: 0,
+  },
+  {
+    hasMine: false,
+    minesAround: 0,
+  },
+  {
+    hasMine: false,
+    minesAround: 0,
+  },
+  {
+    hasMine: false,
+    minesAround: 0,
+  },
+  {
+    hasMine: false,
+    minesAround: 0,
+  },
+  {
+    hasMine: false,
+    minesAround: 0,
+  },
+  {
+    hasMine: true,
+    minesAround: 0,
+  },
+  {
+    hasMine: true,
+    minesAround: 0,
+  },
+];
+
+const gameBoard: GameBoard = {
+  columms: boxOfBoard,
+  rows: boxOfBoard,
 };
