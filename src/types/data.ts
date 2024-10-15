@@ -1,9 +1,9 @@
-type Box = {
+type BoxOfBoard = {
   hasMine: boolean;
   minesAround: 0;
 };
 
 type GameBoard = {
-  rows: Box[];
-  columms: Box[];
+  rows: BoxOfBoard[];
+  columms: BoxOfBoard[];
 };
