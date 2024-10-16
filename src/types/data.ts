@@ -1,4 +1,4 @@
-import { Box, GameBoard } from "./types.js";
+import { Box, Board } from "./types.js";
 
 const boxes: Box[] = [
   {
@@ -39,7 +39,7 @@ const boxes: Box[] = [
   },
 ];
 
-const board: GameBoard = {
+const board: Board = {
   columms: boxes,
   rows: boxes,
 };
