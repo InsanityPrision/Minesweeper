@@ -1,45 +1,45 @@
-import { BoxOfBoard, GameBoard } from "./types.js";
+import { Box, Board } from "./types.js";
 
-const boxOfBoard: BoxOfBoard[] = [
+const boxes: Box[] = [
   {
     hasMine: true,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
-  },
-  {
-    hasMine: true,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: true,
-    minesAround: 0,
+    minesAroundTotal: 0,
+  },
+  {
+    hasMine: true,
+    minesAroundTotal: 0,
   },
 ];
 
-const gameBoard: GameBoard = {
-  columms: boxOfBoard,
-  rows: boxOfBoard,
+const board: Board = {
+  columms: boxes,
+  rows: boxes,
 };
