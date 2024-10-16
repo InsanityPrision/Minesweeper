@@ -1,6 +1,6 @@
 import { BoxOfBoard, GameBoard } from "./types.js";
 
-const boxOfBoard: BoxOfBoard[] = [
+const boxes: BoxOfBoard[] = [
   {
     hasMine: true,
     minesAroundTotal: 0,
@@ -39,7 +39,7 @@ const boxOfBoard: BoxOfBoard[] = [
   },
 ];
 
-const gameBoard: GameBoard = {
-  columms: boxOfBoard,
-  rows: boxOfBoard,
+const board: GameBoard = {
+  columms: boxes,
+  rows: boxes,
 };
