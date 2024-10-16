@@ -1,6 +1,6 @@
 export type BoxOfBoard = {
   hasMine: boolean;
-  minesAround: 0;
+  minesAroundTotal: 0;
 };
 
 export type GameBoard = {

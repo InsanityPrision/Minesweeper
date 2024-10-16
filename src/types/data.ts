@@ -3,39 +3,39 @@ import { BoxOfBoard, GameBoard } from "./types.js";
 const boxOfBoard: BoxOfBoard[] = [
   {
     hasMine: true,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: false,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: true,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
   {
     hasMine: true,
-    minesAround: 0,
+    minesAroundTotal: 0,
   },
 ];
 
