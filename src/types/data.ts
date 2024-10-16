@@ -1,6 +1,6 @@
-import { BoxOfBoard, GameBoard } from "./types.js";
+import { Box, GameBoard } from "./types.js";
 
-const boxes: BoxOfBoard[] = [
+const boxes: Box[] = [
   {
     hasMine: true,
     minesAroundTotal: 0,

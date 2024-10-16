@@ -1,9 +1,9 @@
-export type BoxOfBoard = {
+export type Box = {
   hasMine: boolean;
   minesAroundTotal: 0;
 };
 
-export type GameBoard = {
-  rows: BoxOfBoard[];
-  columms: BoxOfBoard[];
+export type Board = {
+  rows: Box[];
+  columms: Box[];
 };
