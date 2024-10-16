@@ -1,4 +1,4 @@
-import { Board, Box } from "../types/types.js";
+import { Box } from "../types/types.js";
 
 export const hasMine = (): boolean => {
   const probability = 0.15;
@@ -12,7 +12,7 @@ export const hasMine = (): boolean => {
   return false;
 };
 
-export const createBoard = (boardSize: number) => {
+export const createBoard = (boardSize: number): Box[][] => {
   const completedBoard: Box[][] = [];
   const row: Box[] = [];
 
@@ -24,4 +24,6 @@ export const createBoard = (boardSize: number) => {
       minesAroundTotal: 0,
     });
   }
+
+  return completedBoard;
 };
