@@ -2,6 +2,7 @@
   "name": "minesweeper",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "prepare": "husky",
     "start": "serve public",
