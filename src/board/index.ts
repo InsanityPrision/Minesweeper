@@ -6,7 +6,7 @@ export const hasMine = (): boolean => {
 
   const randomNumber = Math.random() <= probability;
 
-  if (randomNumber === true) {
+  if (randomNumber) {
     return true;
   }
 
