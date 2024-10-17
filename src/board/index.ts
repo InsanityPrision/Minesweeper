@@ -2,7 +2,7 @@ import { Box } from "../types/types";
 import { Board } from "./types";
 
 export const hasMine = (): boolean => {
-  const probability = 0.15;
+  const probability = 0.4;
 
   const randomNumber = Math.random() <= probability;
 
@@ -14,17 +14,19 @@ export const hasMine = (): boolean => {
 };
 
 export const createBoard = (boardSize: number): Board => {
-  const completedBoard: Board = [];
-  const row: Box[] = [];
+  const board: Board = [];
 
-  for (let rowsTotal = 0; rowsTotal < boardSize; rowsTotal++) {
-    completedBoard.push(row);
+  for (let rowPosition = 0; rowPosition < boardSize; rowPosition++) {
+    const row: Box[] = [];
+    board.push(row);
 
-    row.push({
-      hasMine: hasMine(),
-      minesAroundTotal: 0,
-    });
+    for (let boxPosition = 0; boxPosition < boardSize; boxPosition++) {
+      row.push({
+        hasMine: hasMine(),
+        minesAroundTotal: 0,
+      });
+    }
   }
 
-  return completedBoard;
+  return board;
 };
