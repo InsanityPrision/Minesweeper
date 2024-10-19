@@ -9,10 +9,40 @@ body {
   font-family: IBM Plex Mono, sans-serif;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .main-header {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   background-color: #9b9b9b;
+}
+
+.main-container {
+  padding: 0px 15px;
+}
+
+.board {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #464646;
+  gap: 5px;
+  justify-items: center;
+  width: max-content;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  background-color: #979797;
 }
