@@ -6,11 +6,7 @@ export const hasMine = (): boolean => {
 
   const randomNumber = Math.random() <= probability;
 
-  if (randomNumber) {
-    return true;
-  }
-
-  return false;
+  return randomNumber;
 };
 
 const calculateMinesAround = (board: Board): Board => {
