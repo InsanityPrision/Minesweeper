@@ -1,3 +1,5 @@
-import { createBoard } from "./board/index.js";
+import { createMainContainer } from "./ui/mainContaienr/index.js";
 
-createBoard(8);
+const mainContainer = createMainContainer();
+
+document.body.appendChild(mainContainer);
