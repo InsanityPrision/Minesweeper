@@ -1,4 +1,4 @@
-import { createBoard } from "../board/index";
+import { createBoard } from "../index";
 
 describe("Given the createBoard function", () => {
   describe("When it recives 8", () => {

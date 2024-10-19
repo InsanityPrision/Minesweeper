@@ -9,7 +9,7 @@ export const hasMine = (): boolean => {
   return randomNumber;
 };
 
-const calculateMinesAround = (board: Board): Board => {
+export const calculateMinesAround = (board: Board): Board => {
   if (board.at(0)) {
     if (board.at(0)?.at(0)?.hasMine) {
       board.at(0)!.at(1)!.minesAroundTotal =
