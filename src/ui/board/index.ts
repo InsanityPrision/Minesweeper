@@ -13,7 +13,7 @@ export const createBox = (): HTMLLIElement[] => {
 
       if (board.at(rowPosition)?.at(boxPosition)?.hasMine) {
         boxButton.innerHTML =
-          "<img src='icons/bomb.svg' width='40' height='40'>";
+          "<img id='mine' src='icons/bomb.svg' width='40' height='40'>";
       }
 
       if (!board.at(rowPosition)?.at(boxPosition)?.hasMine) {
