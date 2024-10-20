@@ -6,6 +6,19 @@ document.body.appendChild(mainContainer);
 
 const boxButton = document.querySelectorAll(".box__box-button");
 
+const onlyMinesInactive = () => {
+  const minesTotal = document.querySelectorAll(".mine").length;
+  const inactiveTotal = document.querySelectorAll(".inactive").length;
+
+  if (minesTotal === inactiveTotal) {
+    const gameOverWarning = document.createElement("div");
+    gameOverWarning.classList.add("you-win");
+    gameOverWarning.textContent = "Congratulations you win!!";
+
+    mainContainer.appendChild(gameOverWarning);
+  }
+};
+
 if (!boxButton) {
   throw new Error("Button does not exist");
 }
@@ -23,5 +36,20 @@ boxButton.forEach((button) => {
 
       mainContainer.appendChild(gameOverWarning);
     }
+  });
+});
+
+const boxes = document.querySelectorAll(".box");
+
+if (!boxes) {
+  throw new Error("Box does not exist");
+}
+
+boxes.forEach((box) => {
+  box.addEventListener("click", (evet) => {
+    evet.preventDefault();
+
+    box.classList.replace("inactive", "active");
+    onlyMinesInactive();
   });
 });
