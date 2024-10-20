@@ -102,7 +102,7 @@ describe("Given the calculateMinesAround function", () => {
 
   describe("When it recives a board of 3 rows and 3 boxes with a mine in top left corner", () => {
     test("Then it should return a board with all mines around the mine in the top left corner with a 1 in minesAroundTotal", () => {
-      const boardTest: Board = [
+      const board: Board = [
         [
           {
             hasMine: true,
@@ -192,15 +192,15 @@ describe("Given the calculateMinesAround function", () => {
         ],
       ];
 
-      const board = calculateMinesAround(boardTest);
+      const boardWithCalculatedMinesAround = calculateMinesAround(board);
 
-      expect(board).toStrictEqual(expectedBoard);
+      expect(boardWithCalculatedMinesAround).toStrictEqual(expectedBoard);
     });
   });
 
   describe("When it recives a board of 3 rows and 3 boxes with a mine on the bottom edge ", () => {
     test("Then it should return a board with all mines around the mine on the borrom edge with a 1 in minesAroundTotal", () => {
-      const boardTest: Board = [
+      const board: Board = [
         [
           {
             hasMine: false,
@@ -290,9 +290,9 @@ describe("Given the calculateMinesAround function", () => {
         ],
       ];
 
-      const board = calculateMinesAround(boardTest);
+      const boardWithCalculatedMinesAround = calculateMinesAround(board);
 
-      expect(board).toStrictEqual(expectedBoard);
+      expect(boardWithCalculatedMinesAround).toStrictEqual(expectedBoard);
     });
   });
 });
