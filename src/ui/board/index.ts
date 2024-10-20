@@ -8,9 +8,21 @@ export const createBox = (): HTMLLIElement[] => {
       const box = document.createElement("li");
       box.classList.add("box");
 
-      box.textContent = `${
-        board.at(rowPosition)!.at(boxPosition)!.minesAroundTotal
-      }`;
+      const boxButton = document.createElement("button");
+      boxButton.classList.add("box__box-button");
+
+      if (board.at(rowPosition)?.at(boxPosition)?.hasMine) {
+        boxButton.innerHTML =
+          "<img src='icons/bomb.svg' width='40' height='40'>";
+      }
+
+      if (!board.at(rowPosition)?.at(boxPosition)?.hasMine) {
+        boxButton.textContent = `${
+          board.at(rowPosition)!.at(boxPosition)!.minesAroundTotal
+        }`;
+      }
+
+      box.appendChild(boxButton);
 
       boxes.push(box);
     }
