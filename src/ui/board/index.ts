@@ -7,6 +7,7 @@ export const createBox = (): HTMLLIElement[] => {
     for (let boxPosition = 0; boxPosition < board.length; boxPosition++) {
       const box = document.createElement("li");
       box.classList.add("box");
+      box.classList.add("inactive");
 
       const boxButton = document.createElement("button");
       boxButton.classList.add("box__box-button");
@@ -14,6 +15,7 @@ export const createBox = (): HTMLLIElement[] => {
       if (board.at(rowPosition)?.at(boxPosition)?.hasMine) {
         boxButton.innerHTML =
           "<img id='mine' src='icons/bomb.svg' width='40' height='40'>";
+        box.classList.add("mine");
       }
 
       if (!board.at(rowPosition)?.at(boxPosition)?.hasMine) {
