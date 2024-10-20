@@ -32,10 +32,11 @@ button {
 
 .main-container {
   padding: 0px 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .board {
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   background-color: #464646;
@@ -52,7 +53,7 @@ button {
   color: #fff;
   height: 45px;
   width: 45px;
-  background-color: #979797;
+  background-color: #dadada;
 }
 
 .box__box-button {
