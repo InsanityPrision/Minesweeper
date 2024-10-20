@@ -15,5 +15,13 @@ boxButton.forEach((button) => {
     evet.preventDefault();
 
     button.classList.add("active");
+
+    if (button.children.namedItem("mine")) {
+      const gameOverWarning = document.createElement("div");
+      gameOverWarning.classList.add("warning");
+      gameOverWarning.textContent = "Game Over";
+
+      mainContainer.appendChild(gameOverWarning);
+    }
   });
 });
