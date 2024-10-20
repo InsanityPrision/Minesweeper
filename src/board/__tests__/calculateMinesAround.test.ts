@@ -4,7 +4,7 @@ import { Board } from "../types";
 describe("Given the calculateMinesAround function", () => {
   describe("When it recives a board of 3 rows and 3 boxes with a mine in the center", () => {
     test("Then it should return a board with all mines around the mine in the center with a 1 in minesAroundTotal", () => {
-      const boardTest: Board = [
+      const board: Board = [
         [
           {
             hasMine: false,
@@ -94,9 +94,9 @@ describe("Given the calculateMinesAround function", () => {
         ],
       ];
 
-      const board = calculateMinesAround(boardTest);
+      const boardWithCalculatedMinesAround = calculateMinesAround(board);
 
-      expect(board).toStrictEqual(expectedBoard);
+      expect(boardWithCalculatedMinesAround).toStrictEqual(expectedBoard);
     });
   });
 
